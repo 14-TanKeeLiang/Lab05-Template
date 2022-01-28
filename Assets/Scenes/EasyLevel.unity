@@ -488,6 +488,84 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300002, guid: ce7348d724aa0fc44aaf53391b9bae9b, type: 3}
+--- !u!1 &197024473
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 197024474}
+  - component: {fileID: 197024476}
+  - component: {fileID: 197024475}
+  m_Layer: 5
+  m_Name: TimerTxt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &197024474
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 197024473}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 241917437}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -278.87, y: 125.49}
+  m_SizeDelta: {x: 189.49347, y: 66.40295}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &197024475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 197024473}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 25
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 3
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Timer: 0'
+--- !u!222 &197024476
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 197024473}
+  m_CullTransparentMesh: 0
 --- !u!1 &198233229
 GameObject:
   m_ObjectHideFlags: 0
@@ -753,6 +831,7 @@ RectTransform:
   m_Children:
   - {fileID: 582396629}
   - {fileID: 97152963}
+  - {fileID: 197024474}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1364,8 +1443,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -292.7, y: 191.9}
-  m_SizeDelta: {x: 180.74928, y: 66.40396}
+  m_AnchoredPosition: {x: -289.6, y: 191.9}
+  m_SizeDelta: {x: 186.85027, y: 66.40396}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &582396630
 MonoBehaviour:
@@ -3020,6 +3099,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: FPSController
       objectReference: {fileID: 0}
+    - target: {fileID: 8088412581048817507, guid: 5e9e851c0e142814dac026a256ba2ac0,
+        type: 3}
+      propertyPath: coinCollectedTxt
+      value: 
+      objectReference: {fileID: 97152964}
+    - target: {fileID: 8088412581048817507, guid: 5e9e851c0e142814dac026a256ba2ac0,
+        type: 3}
+      propertyPath: timerTxt
+      value: 
+      objectReference: {fileID: 197024475}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
 --- !u!65 &1428040126
@@ -3484,6 +3573,7 @@ GameObject:
   - component: {fileID: 1990571354}
   - component: {fileID: 1990571356}
   - component: {fileID: 1990571355}
+  - component: {fileID: 1990571357}
   m_Layer: 0
   m_Name: GoldCoin1
   m_TagString: Coin
@@ -3532,6 +3622,19 @@ CapsuleCollider:
   m_Height: 0.010337511
   m_Direction: 0
   m_Center: {x: -0.000013385773, y: 0.000511899, z: -0.000097812655}
+--- !u!114 &1990571357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1990571353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4414ab7cd3d674b449d233db0d583605, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extinguishSounds: []
 --- !u!1 &2014010564
 GameObject:
   m_ObjectHideFlags: 0
