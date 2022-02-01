@@ -9,7 +9,7 @@ public class ButtonScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -26,7 +26,7 @@ public class ButtonScript : MonoBehaviour
 
     public void EasyLevel()
     {
-        currentLevel= 1;
+        currentLevel = 1;
         SceneManager.LoadScene("EasyLevel");
     }
 
@@ -44,15 +44,15 @@ public class ButtonScript : MonoBehaviour
 
     public void RestartBtn()
     {
-        if(currentLevel == 1)
+        if (currentLevel == 1)
         {
             SceneManager.LoadScene("EasyLevel");
         }
-        if(currentLevel == 2)
+        if (currentLevel == 2)
         {
             SceneManager.LoadScene("MediumLevel");
         }
-        if(currentLevel == 3)
+        if (currentLevel == 3)
         {
             SceneManager.LoadScene("HardLevel");
         }
@@ -62,5 +62,10 @@ public class ButtonScript : MonoBehaviour
     {
         currentLevel = 0;
         SceneManager.LoadScene("MainMenu");
+    }
+
+    public void QuitBtn()
+    {
+        Application.Quit();
     }
 }
